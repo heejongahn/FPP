@@ -66,5 +66,7 @@ if __name__ == '__main__':
         current_edges = current_edges.strip('\n').split(' ')
         edges[node] = current_edges
 
-    pp = fpp(nodes, edges)
-    print(pp)
+    pps = fpp(nodes, edges)
+    print ('총 {}개의 prime path가 존재합니다.'.format(len(pps)))
+    for pp in pps:
+        print (pp)
